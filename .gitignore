@@ -1,0 +1,30 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# SQLite database files
+bot_stats.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+
+# Environment variables
+.env
+
+# Generated images
+/images/*.jpg
+/images/*.jpeg
+
+# Logs
+logs/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VSCode settings
+.vscode/
