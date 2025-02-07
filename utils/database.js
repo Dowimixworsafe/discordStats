@@ -39,6 +39,22 @@ db.exec(`
     )
 `);
 
+db.exec(`
+    CREATE TABLE IF NOT EXISTS emoji_usage (
+        emoji TEXT PRIMARY KEY,
+        count INTEGER DEFAULT 0
+    )
+`);
+
+// 🎵 Tworzymy tabelę dla najczęściej słuchanych piosenek
+db.exec(`
+    CREATE TABLE IF NOT EXISTS song_stats (
+        title TEXT PRIMARY KEY,
+        platform TEXT,
+        count INTEGER DEFAULT 0
+    )
+`);
+
 console.log("✅ Baza danych załadowana!");
 
 module.exports = db;
